@@ -1,0 +1,276 @@
+[id$="-maj"] {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+
+
+/***********************************************
+*
+*   Family style
+*
+***********************************************/
+
+#family:before {
+    background-color: #8d82c4;
+}
+
+#family {
+    width: calc(100%*2/5);
+    height: 40vh;
+    min-width: calc(420px*2/5);
+    min-height: 10em;
+    background-image: url("/photo/family.jpg");
+}
+
+#family-maj>h3 {
+    width: 100%;
+    padding-bottom: 0.25em;
+}
+
+#family-maj>p {
+    width: 100%;
+    margin-top: 0.5em;
+    word-spacing: 40px;
+    white-space: nowrap;
+}
+
+.resume:hover #family {
+    min-width: calc(420px*0.3);
+}
+
+
+/***********************************************
+*
+*
+*   school style
+*
+***********************************************/
+
+#school:before {
+    background-color: #6fc3df;
+}
+
+#school {
+    width: calc(100%*0.6);
+    height: 40vh;
+    min-width: calc(420px*0.6);
+    min-height: 10em;
+    background-image: url("/photo/school.jpg");
+}
+
+#school-maj>h3 {
+    width: 100%;
+    padding-bottom: 0.25em;
+}
+
+#school-maj>p {
+    width: 100%;
+    margin-top: 0.5em;
+    word-spacing: 40px;
+    white-space: nowrap;
+}
+
+.resume:hover #school {
+    min-width: calc(420px*0.5);
+}
+
+
+/***********************************************
+*
+*
+*   job style
+*
+***********************************************/
+
+#job:before {
+    background-color: #ec8d81;
+}
+
+#job {
+    width: 100%;
+    height: 40vh;
+    min-height: 10em;
+    background-image: url("/photo/job.jpg");
+}
+
+#job-maj>h3 {
+    width: 100%;
+    padding-bottom: 0.25em;
+}
+
+#job-maj>p {
+    width: 100%;
+    margin-top: 0.5em;
+    word-spacing: 40px;
+    white-space: nowrap;
+}
+
+.resume {
+    width: 100%;
+    float: left;
+    margin-top: 1vh;
+}
+
+.resume:hover #job {
+    min-width: calc(420px*0.9);
+}
+
+.resume:hover span {
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease, filter 1s ease;
+}
+
+.resume:hover .text-content {
+    float: left;
+    position: static;
+    width: 10%;
+    height: 80vh;
+}
+
+.resume:hover .tiles {
+    width: 90%;
+    height: 80vh;
+    float: left;
+}
+
+.resume:hover [id$="-maj"]>h3 {
+    text-align: right;
+}
+
+.resume:hover [id$="-maj"]>p {
+    text-align: right;
+}
+
+
+/***********************************************
+*
+*   Food style
+*
+***********************************************/
+
+#food:before {
+    background-color: #87c5a4;
+}
+
+#food {
+    width: 100%;
+    height: 40vh;
+    min-height: 10em;
+    background-image: url("/photo/food.jpg");
+}
+
+#food-maj>h3 {
+    width: 100%;
+    padding-bottom: 0.25em;
+}
+
+#food-maj>p {
+    width: 100%;
+    margin-top: 0.5em;
+    word-spacing: 40px;
+    white-space: nowrap;
+}
+
+.food {
+    width: 100%;
+    float: left;
+    margin-top: 1vh;
+}
+
+.food:hover #food {
+    min-width: calc(420px*0.9);
+}
+
+.food:hover span {
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease, filter 1s ease;
+}
+
+.food:hover .text-content {
+    float: left;
+    position: static;
+    width: 10%;
+    height: 40vh;
+}
+
+.food:hover .tiles {
+    width: 90%;
+    height: 40vh;
+    float: left;
+}
+
+.food:hover [id$="-maj"]>h3 {
+    text-align: right;
+}
+
+.food:hover [id$="-maj"]>p {
+    text-align: right;
+}
+
+
+/***********************************************
+*
+*   smartphone style
+*
+***********************************************/
+
+#phone:before {
+    background-color: #8ea9e8;
+}
+
+#phone {
+    width: 100%;
+    height: 40vh;
+    min-height: 10em;
+    background-image: url("/photo/phone.jpg");
+}
+
+#phone-maj>h3 {
+    width: 100%;
+    padding-bottom: 0.25em;
+}
+
+#phone-maj>p {
+    width: 100%;
+    margin-top: 0.5em;
+    word-spacing: 40px;
+    white-space: nowrap;
+}
+
+.phone {
+    width: 100%;
+    float: left;
+    margin-top: 1vh;
+}
+
+.phone:hover #phone {
+    min-width: calc(420px*0.9);
+}
+
+.phone:hover span {
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease, filter 1s ease;
+}
+
+.phone:hover .text-content {
+    float: left;
+    position: static;
+    width: 10%;
+    height: 40vh;
+}
+
+.phone:hover .tiles {
+    width: 90%;
+    height: 40vh;
+    float: left;
+}
+
+.phone:hover [id$="-maj"]>h3 {
+    text-align: right;
+}
+
+.phone:hover [id$="-maj"]>p {
+    text-align: right;
+}

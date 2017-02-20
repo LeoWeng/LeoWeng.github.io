@@ -1,0 +1,32 @@
+img.skill-img {
+    width: 100%;
+}
+
+.skill-info h3 {
+    text-align: center;
+}
+
+.skill-info h2 {
+    text-align: center;
+    padding: 50px 0px;
+    color: orangered;
+    text-shadow: 0px 0px 0.5em #000000;
+}
+
+.skill-info.video h2 {
+    padding: 20px 0px;
+}
+
+.skill-info p {
+    margin-top: auto;
+    word-spacing: normal;
+    text-align: justify;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 1em;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}

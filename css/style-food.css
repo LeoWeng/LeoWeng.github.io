@@ -1,0 +1,89 @@
+.jumbotron.delicious {
+    background-image: url(/photo/food/01.jpg);
+    width: 100%;
+    background-position: right;
+}
+
+.jumbotron.delicious:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    height: 90vh;
+    width: 100%;
+    background-color: #4e4e4e;
+    min-width: 420px;
+}
+
+section img {
+    border-radius: 5%;
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .food-section {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .food-section {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .food-section {
+        width: 90%;
+    }
+}
+
+h1.food-title {
+    font-size: 3em;
+    color: rgba(208, 16, 16, 0.99);
+    text-shadow: 10px 10px 0.1em rgba(255, 0, 0, 0.33);
+}
+
+h3.food-title {
+    padding: 1.5em;
+    color: rgba(255, 140, 4, 0.81);
+    font-size: 1.5em;
+}
+
+.row.food-section span {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.row.food-section span.span-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff4e00;
+}
+
+.row.food-section span.text-red {
+    color: #ff8900;
+}
+
+.row.food-section span.text-green {
+    color: #58a258;
+}
+
+.row.food-section span.text-hint {
+    font-size: 1.5em;
+    border-bottom: 1px solid blue;
+    padding-bottom: 0;
+}
+
+.row.food-section .img-right {
+    float: right;
+    width: 70%;
+    margin: 0px 0px 0px 10px;
+}
+
+.footer-family.food {
+    width: 100%;
+    min-width: 420px;
+}

@@ -1,0 +1,78 @@
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-shadow: 0px 0px 0.5em #000000;
+}
+
+.tiles article {
+    box-sizing: border-box;
+    align-items: center;
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.tiles article h3 {
+    font-size: 2em;
+    text-align: left;
+    border-bottom: 4px solid white;
+}
+
+.tiles article header {
+    position: relative;
+    z-index: 3;
+}
+
+.tiles article h3 a:hover {
+    color: orangered;
+}
+
+.tiles article .link.primary {
+    border: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 6;
+}
+
+.tiles article:before {
+    box-sizing: border-box;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    content: '';
+    display: block;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.tiles article:after {
+    box-sizing: border-box;
+    background-color: rgba(36, 41, 67, 0.25);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.tiles article:hover:before {
+    opacity: 0;
+}

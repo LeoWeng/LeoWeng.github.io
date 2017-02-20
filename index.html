@@ -3,48 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="style.css">
-    <title>title</title>
+    <link rel="stylesheet" href="/css/mybootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tiles.css">
+    <link rel="stylesheet" href="/css/style-tiles.css">
+    <title>Home Page</title>
 </head>
 
 <body>
+    <article>
+        <row>
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="">About</a>
+                        <ul class="sub">
+                            <li><a href="/pages/life.html">My Life</a></li>
+                            <li><a href="/pages/school.html">My School</a></li>
+                            <li><a href="/pages/skill.html">Job & Skill</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/pages/food.html">Food</a></li>
+                    <li><a href="/pages/smartphone.html">Smart Phone</a></li>
+                </ul>
+            </nav>
+        </row>
+    </article>
     <header>
+        <div class="jumbotron">
+            <div class="avatar">
+                <img src="/photo/avatar.leo.jpg" alt="">
+            </div>
+            <div class="container">
+                <h1>Leo's Project</h1>
+                <p>認真 專注 卓越</p>
+            </div>
+        </div>
     </header>
-    <section>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nesciunt laborum expedita veritatis sapiente a quae magnam ipsam debitis! Adipisci ut repudiandae ipsam nam quam, distinctio, sint eius cupiditate fugit.</p>
-            </div>
+    <article>
+        <div class="resume">
+            <div class="text-content"><span>履歷</span></div>
+            <section class="tiles">
+                <article id="family">
+                    <header class="major" id="family-maj">
+                        <h3>Life</h3>
+                        <p>多 元 多 樣</p>
+                    </header>
+                    <a href="/pages/life.html" class="link primary"></a>
+                </article>
+                <article id="school">
+                    <header class="major" id="school-maj">
+                        <h3>SCHOOL</h3>
+                        <p>自 由 自 在 的 學 生 生 活</p>
+                    </header>
+                    <a href="/pages/school.html" class="link primary"></a>
+                </article>
+                <article id="job">
+                    <header class="major" id="job-maj">
+                        <h3>MY JOB & SKILL</h3>
+                        <p>創 新 與 挑 戰</p>
+                    </header>
+                    <a href="/pages/skill.html" class="link primary"></a>
+                </article>
+            </section>
         </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dicta repudiandae, id possimus, sed veniam nesciunt doloremque quia enim ullam rem! Dolore, eaque ullam ut delectus sapiente pariatur praesentium necessitatibus.
-            </div>
+        <div class="food">
+            <section class="tiles">
+                <article id="food">
+                    <header class="major" id="food-maj">
+                        <h3>FOOD</h3>
+                        <p>美 味 關 係</p>
+                    </header>
+                    <a href="/pages/food.html" class="link primary"></a>
+                </article>
+            </section>
+            <div class="text-content"><span>食記</span></div>
         </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4 test-img">
-                    <img src="p3.jpg" alt="unsplash building"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus velit neque vel soluta accusantium cum quidem veniam, quo vero corporis, possimus, quis quos ducimus, ratione ad numquam! Repudiandae, obcaecati.
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 test-img">
-                    <img src="p2.png" alt="unsplash building"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odio laborum maiores, quasi nisi a beatae cumque suscipit hic, deserunt officiis explicabo cum temporibus voluptates vel illo vitae! Quae, error?
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 test-img">
-                    <img src="p1.jpg" alt="unsplash building"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quam, vitae, necessitatibus delectus earum reiciendis consectetur soluta. Accusantium rem eveniet soluta, doloremque in officiis minus deleniti reprehenderit, eligendi itaque ab.
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
+        <div class="phone">
+            <div class="text-content"><span>科技</span></div>
+            <section class="tiles">
+                <article id="phone">
+                    <header class="major" id="phone-maj">
+                        <h3>SMARTPHONE</h3>
+                        <p>時 尚 美 學</p>
+                    </header>
+                    <a href="/pages/smartphone.html" class="link primary"></a>
+                </article>
+            </section>
 
+        </div>
+    </article>
+    <footer>
+        <div class="row">
+            <div class="col-5">
+                <div class="facebook">
+                    <a href="https://www.facebook.com/goodog008" id="facebook-link">
+                        <h1>f</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="footer-info">
+                    <li>Phone number: <u>+886-919358642</u></li>
+                    <li>E-mail: <u>goodog008@gmail.com</u></li>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

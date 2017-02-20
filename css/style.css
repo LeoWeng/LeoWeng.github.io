@@ -1,0 +1,447 @@
+/***********************************************
+*
+*   header style
+*
+***********************************************/
+
+.jumbotron {
+    background-size: cover;
+    min-width: 420px;
+}
+
+.jumbotron {
+    background-image: url(https://images.unsplash.com/uploads/1412026095116d2b0c90e/3bf33993?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=63ae6357d1060dc2151eae688eff88af);
+    background-position: center;
+    min-height: 500px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 0.5em #000000;
+    height: 90vh;
+}
+
+.jumbotron.family {
+    background-image: url(/photo/IMG_0164.JPG);
+    background-position: right;
+    width: 100%;
+    min-width: 840px;
+}
+
+.jumbotron.school {
+    background-image: url(/photo/school/1.jpg);
+    background-position: center;
+    width: 100%;
+    min-width: 840px;
+}
+
+.jumbotron.skill {
+    background-image: url(/photo/skill/1.jpg);
+    background-position: center;
+    width: 100%;
+    min-width: 840px;
+}
+
+.container {
+    width: 80%;
+    height: 40vh;
+    min-height: 200px;
+    min-width: calc(420px*4/5);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    overflow: hidden;
+}
+
+.container.family {
+    height: calc(90vh/4);
+    position: absolute;
+    top: calc(100%*2/3);
+    min-width: calc(840px*0.8);
+}
+
+.container.skill-top {
+    height: calc(90vh/4);
+    min-width: calc(840px*0.8);
+}
+
+.container h1 {
+    text-align: right;
+    font-size: 5vw;
+    font-weight: bold;
+    border-bottom: 1vw solid white;
+    padding-bottom: 1vh;
+    white-space: nowrap;
+}
+
+.container p {
+    text-align: right;
+    font-size: 2.5vw;
+    margin-top: 1vw;
+    word-spacing: 40px;
+}
+
+header {
+    float: left;
+    width: 100%;
+}
+
+
+/***********************************************
+*
+*   nav style
+*
+***********************************************/
+
+.top-menu nav>ul li>ul {
+    display: none;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.top-menu li {
+    vertical-align: top;
+    float: none;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.top-menu li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+nav.top-menu>ul>li:hover>a {
+    vertical-align: top;
+}
+
+nav.top-menu>ul li:hover>ul {
+    position: relative;
+    display: inline-block;
+}
+
+.top-menu ul>li:hover {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    background-color: #555;
+}
+
+.top-menu ul.sub>li {
+    float: left;
+    clear: both;
+}
+
+.top-menu ul.sub {
+    position: absolute;
+    background-color: #555;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.top-menu ul.sub>li:hover {
+    color: #555;
+    background-color: white;
+}
+
+.top-menu ul.sub>li:hover>a {
+    color: #555;
+}
+
+.top-menu li:hover>ul.sub {
+    position: absolute;
+    z-index: 5;
+}
+
+
+/***********************************************
+*
+*   article style
+*
+***********************************************/
+
+article {
+    float: left;
+    background-color: #e8e8e8;
+    min-width: 420px;
+    width: 100%;
+}
+
+article.life-art {
+    min-width: 840px;
+    width: 100%;
+}
+
+article.school-art {
+    min-width: 840px;
+    width: 100%;
+}
+
+article.skill-art {
+    min-width: 840px;
+    width: 100%;
+}
+
+.text-content {
+    position: absolute;
+    cursor: pointer;
+}
+
+.text-content span {
+    color: white;
+    writing-mode: vertical-lr;
+    text-shadow: 0px 0px 0.5em #000000;
+    font-size: 6vw;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    z-index: 5;
+    opacity: 0;
+}
+
+
+/***********************************************
+*
+*   section style
+*
+***********************************************/
+
+
+/*<life>*/
+
+section.life-maj {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.47);
+    min-width: 820px;
+}
+
+section.life-maj h1 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.life-maj p {
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    text-align: center;
+    font-size: 1.6em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.life-maj .thumbnail {
+    box-sizing: border-box;
+    position: relative;
+    width: 400px;
+}
+
+section.life-maj .thumbnail img {
+    display: block;
+    max-height: 250px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 90%;
+}
+
+section.life-maj .thumbnail p {
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    text-align: justify;
+    font-size: 1em;
+    width: 90%;
+    padding: 1em;
+}
+
+.life-metadata {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.life-metadata .thumbnail {
+    float: left;
+}
+
+
+/*<school>*/
+
+section.school-maj {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.47);
+    min-width: 820px;
+}
+
+section.school-maj h1 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.school-maj p {
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    text-align: center;
+    font-size: 1.6em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.school-maj .thumbnail {
+    box-sizing: border-box;
+    position: relative;
+    width: 800px;
+}
+
+section.school-maj .thumbnail img {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+section.school-maj .thumbnail p {
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    text-align: justify;
+    font-size: 1em;
+    width: 90%;
+    padding: 1em;
+}
+
+.school-metadata {
+    width: 840px;
+    margin: 0 auto;
+}
+
+section.school-maj .thumbnail.full-img img {
+    width: 90%;
+}
+
+.school-metadata .thumbnail {
+    float: left;
+    padding: 10px 5px;
+}
+
+
+/*<skill>*/
+
+section.skill-maj {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.47);
+    min-width: 820px;
+}
+
+
+/***********************************************
+*
+*   footer style
+*
+***********************************************/
+
+footer {
+    float: left;
+    width: 100%;
+}
+
+.footer-family {
+    min-width: 840px;
+}
+
+section.thumbnail {
+    width: 100%;
+    padding: 10px;
+}
+
+section.thumbnail img {
+    width: calc(100%/4);
+    padding: 10px;
+}
+
+section.thumbnail p {
+    text-indent: 20px;
+}
+
+.avatar {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+.avatar>img {
+    width: 100%;
+    border-radius: 80% 5% 30% 5%;
+    border-top: 6px solid;
+    border-bottom: 8px solid;
+    border-right: 2px solid;
+    border-left: 1px solid;
+    border-color: white;
+    width: 40vw;
+    height: 40vw;
+    max-width: 90vh;
+    max-height: 90vh;
+    min-width: 10em;
+    min-height: 10em;
+    z-index: 1;
+}
+
+.footer-info {
+    float: right;
+}
+
+.facebook>h1 {
+    white-space: 10px;
+    line-height: 50px;
+    float: left;
+    color: rgba(0, 0, 255, 0.58);
+}
+
+#facebook-link {
+    float: left;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Ope0n Sans', sans-serif;
+    text-decoration: none;
+}
+
+#facebook-link:hover {
+    box-sizing: border-box;
+    border-radius: 0;
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+}
