@@ -3,113 +3,505 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/mybootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/tiles.css">
-    <link rel="stylesheet" href="./css/style-tiles.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/vendorInc.css">
+    <link rel="stylesheet" href="/vendor/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/colorSet.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/vendor/three.r92.min.js"></script>
+    <script src="/vendor/vanta.globe.min.js"></script>
+    <script src="/js/vendorInc.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scroll.js"></script>
+    <title>Weng, Sheng-Hung</title>
 </head>
 
 <body>
-    <article>
-        <row>
-            <nav class="top-menu">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="">About</a>
-                        <ul class="sub">
-                            <li><a href="/pages/life.html">My Life</a></li>
-                            <li><a href="/pages/school.html">My School</a></li>
-                            <li><a href="/pages/skill.html">Job & Skill</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/pages/food.html">Food</a></li>
-                    <li><a href="/pages/smartphone.html">Smart Phone</a></li>
-                </ul>
-            </nav>
-        </row>
-    </article>
-    <header>
-        <div class="jumbotron">
-            <div class="avatar">
-                <img src="/photo/avatar.leo.jpg" alt="">
-            </div>
-            <div class="container">
-                <h1>Leo's Project</h1>
-                <p>認真 專注 卓越</p>
-            </div>
-        </div>
-    </header>
-    <article>
-        <div class="resume">
-            <div class="text-content"><span>履歷</span></div>
-            <section class="tiles">
-                <article id="family">
-                    <header class="major" id="family-maj">
-                        <h3>Life</h3>
-                        <p>多 元 多 樣</p>
-                    </header>
-                    <a href="/pages/life.html" class="link primary"></a>
-                </article>
-                <article id="school">
-                    <header class="major" id="school-maj">
-                        <h3>SCHOOL</h3>
-                        <p>自 由 自 在 的 學 生 生 活</p>
-                    </header>
-                    <a href="/pages/school.html" class="link primary"></a>
-                </article>
-                <article id="job">
-                    <header class="major" id="job-maj">
-                        <h3>MY JOB & SKILL</h3>
-                        <p>創 新 與 挑 戰</p>
-                    </header>
-                    <a href="/pages/skill.html" class="link primary"></a>
-                </article>
-            </section>
-        </div>
-        <div class="food">
-            <section class="tiles">
-                <article id="food">
-                    <header class="major" id="food-maj">
-                        <h3>FOOD</h3>
-                        <p>美 味 關 係</p>
-                    </header>
-                    <a href="/pages/food.html" class="link primary"></a>
-                </article>
-            </section>
-            <div class="text-content"><span>食記</span></div>
-        </div>
-        <div class="phone">
-            <div class="text-content"><span>科技</span></div>
-            <section class="tiles">
-                <article id="phone">
-                    <header class="major" id="phone-maj">
-                        <h3>SMARTPHONE</h3>
-                        <p>時 尚 美 學</p>
-                    </header>
-                    <a href="/pages/smartphone.html" class="link primary"></a>
-                </article>
-            </section>
-
-        </div>
-    </article>
-    <footer>
-        <div class="row">
-            <div class="col-5">
-                <div class="facebook">
-                    <a href="https://www.facebook.com/goodog008" id="facebook-link">
-                        <h1>f</h1>
-                    </a>
+    <div class="content__inner">
+    <div class="container height-100">
+    <div class="row height-100 overflow-hidden">
+        <div class="col-lg-5 site-content__inner-left">
+            <div class="site-content__right">
+                <div class="left-vertical-menu">
+                    <div class="session-top-menu">
+                        <span style="color:#D360D7;">WENG</span><span style="color:#E5FB6F;">CV</span>
+                    </div>
+                    <ul class="session-info-menu">
+                        <li><i class="fas fa-user"></i></li>
+                        <li><i class="fas fa-tools"></i></li>
+                        <li><i class="fas fa-suitcase"></i></li>
+                        <li><i class="fas fa-school"></i></li>
+                    </ul>
+                    <ul class="session-buttom-menu">
+                        <li><a href="https://drive.google.com/file/d/1HqBDjorCJ0p9O68ONnFcu8J_f_IFmptd/view?usp=sharing"><i class="fas fa-cloud-download-alt"></i></a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-7">
-                <div class="footer-info">
-                    <li>Phone number: <u>+886-919358642</u></li>
-                    <li>E-mail: <u>goodog008@gmail.com</u></li>
+                <div class="person">
+                    <div class="person_avatar"></div>
+                    <div class="person_info">
+                        <h3 class="person_name">Weng, Sheng-Hung</h3>
+                        <div class="person_position">
+                            Developer
+                        </div>
+                        <div class="person_socials">
+                            <ul class="person_socials_list">
+                                <li><a href="https://www.cakeresume.com/goodog008"><i class="fab fa-cuttlefish"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/sheng-hung-weng-1b269b143/"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/LeoWeng"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="col-lg-7 site-content__inner-right">
+        <div id="anima_background" class="overlay">
+            <div id="container-viewer" class="container-view">
+                <div id="container-page" class="container-page">
+                    <header id="about" class="entry-header">
+                        <h1 class="title">About Me</h1>
+                    </header>
+                    <div class="about leo-block">
+                    <div class="about-list">
+                        <div class="about-item rgba-complement-0">Product Developer</div>
+                        <div class="about-item rgba-complement-0">1y+ Full-stack</div>
+                        <div class="about-item rgba-complement-0">3y+ Embedded Linux</div>
+                        <div class="about-item rgba-complement-0">3y+ Automotive MCU</div>
+                    </div>
+                    <div class="about-description">
+                    <p>7 years product development experience, 3+ in MCU Dev and 3+ in Embedded Linux Dev.
+                    Willing to embrace any kind of challenge and finding ways out to solve problems.
+                    Love all the technical things in the world.</p>
+                    </div>
+                    </div>
+                    <div id="skill" class="skill leo-block">
+                        <div class="title-wrap">
+                            <h3 class="title">My Skill</h3>
+                        </div>
+                        <div class="skill-description">
+                            <p>Product Developer with 7 years of experience in designing and developing system integration,
+                                system structure, testing, debugging, problem-solving, and training staff within embedded technologies.
+                                Proven ability in optimizing embedded system functionality that improves workflow efficiencies of the system.</p>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">    
+                                <i class="fab fa-linux"></i>
+                                <h5>Embedded Linux Development</h5>
+                                <div class="skill-content">
+                                    <li>
+                                        <h6 class="skill-content-item">Docker Script designing</h6>
+                                        <span class="bar"><span class="hidden-familiar"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">OPENWRT devlopment</h6>
+                                        <span class="bar"><span class="hidden-expert"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">Virtual File System designing</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">Embedded Linux development</h6>
+                                        <span class="bar"><span class="hidden-expert"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">Linux Programming with C</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">Socket Programming with C</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">Bash shell script designing</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">Makefile designing</h6>
+                                        <span class="bar"><span class="hidden-expert"></span></span>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-microchip"></i>
+                                <h5>Embedded MCU Development</h5>
+                                <div class="skill-content">
+                                    <li>
+                                        <h6 class="skill-content-item">MCU None-OS Programming with C</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">TFT Display OSD Design</h6>
+                                        <span class="bar"><span class="hidden-expert"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">Electronic loop detection</h6>
+                                        <span class="bar"><span class="hidden-expert"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">CAN Bus function designing</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">I2C function designin</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">SPI function designing</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">UART function designing</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">PWM function designing</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                    <li>
+                                        <h6 class="skill-content-item">ADC function designing</h6>
+                                        <span class="bar"><span class="hidden-master"></span></span>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="item-group">
+                                <i class="fas fa-network-wired"></i>
+                                <div class="item-group-title">
+                                    <h5>Full Stack Web Development</h5>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="far fa-eye inline-icon"></i>
+                                    <h5 class="inline-title">Frontend</h5>
+                                    <div class="skill-content">
+                                        <li>
+                                            <h6 class="skill-content-item">Restful API</h6>
+                                            <span class="bar"><span class="hidden-junior"></span></span>
+                                        </li>
+                                        <li>
+                                            <h6 class="skill-content-item">JavaScript</h6>
+                                            <span class="bar"><span class="hidden-expert"></span></span>
+                                        </li>
+                                        <li>
+                                            <h6 class="skill-content-item">CSS/HTML</h6>
+                                            <span class="bar"><span class="hidden-expert"></span></span>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                        <i class="fas fa-robot inline-icon"></i>
+                                        <h5 class="inline-title">Backend</h5>
+                                    <div class="skill-content">
+                                        <li>
+                                            <h6 class="skill-content-item">Golang Web Server Pogramming</h6>
+                                            <span class="bar"><span class="hidden-master"></span></span>
+                                        </li>
+                                        <li>
+                                            <h6 class="skill-content-item">MySQL/Mariadb/SQLite Server</h6>
+                                            <span class="bar"><span class="hidden-familiar"></span></span>
+                                        </li>
+                                        <li>
+                                            <h6 class="skill-content-item">SQL Script</h6>
+                                            <span class="bar"><span class="hidden-expert"></span></span>
+                                        </li>
+                                        <li>
+                                            <h6 class="skill-content-item">Restful Server</h6>
+                                            <span class="bar"><span class="hidden-expert"></span></span>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="group-exp-edu" class="exp leo-block exp-flex">
+                        <div id="exp" class="flex-block">
+                            <div class="title-wrap">
+                                <i class="fas fa-suitcase exp-inline"></i>
+                                <h3 class="title txt-inline">Exprerience</h3>
+                            </div>
+                            <div class="exp-group">
+                                <div class="number-line"></div>
+                                <div class="exp-box">
+                                    <div class="item-num">1</div>
+                                    <h5 class="company">LITE-ON Singapore PTE LTD</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Senior Engineer</span>
+                                        <span class="exp-start">May 2018</span>
+                                        <span class="exp-end">May 2019</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <div class="job-descript">Archive Linux Server</div>
+                                        <h6 class="job-exp-time">
+                                            <span class="job-start">2018.5</span>
+                                            <span class="job-end">2019.5</span>
+                                        </h6>
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="role">Individual weight for the team</span>
+                                            <span class="content">30%</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Lead developer and file system architect.</span>
+                                            <span class="content">Designing height performance R/W algorithm</span>
+                                            <span class="content">which a software RAID file protection method.</span>
+                                            </h5>                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="exp-box">
+                                    <div class="item-num">2</div>
+                                    <h5 class="company">LITE-ON Technology</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Senior Engineer</span>
+                                        <span class="exp-start">Dec 2015</span>
+                                        <span class="exp-end">May 2018</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <div class="job-descript">Archive Linux Server(Full Stack develope)</div>
+                                        <h6 class="job-exp-time">
+                                            <span class="job-start">2017.10</span>
+                                            <span class="job-end">2017.12</span>
+                                        </h6>
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="role">Individual weight for the team</span>
+                                            <span class="content">70%</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Lead developer and web server architect.</span>
+                                            <span class="content">Designing an easy operation web user interface for access storage device.</span>
+                                            </h5>                                
+                                        </p>
+                                    </div>
+                                    <div class="exp-session">
+                                        <div class="job-descript">Wi-Fi Storage Device</div>
+                                        <h6 class="job-exp-time">
+                                            <span class="job-start">2015.12</span>
+                                            <span class="job-end">2018.4</span>
+                                        </h6>
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="role">Individual weight for the team</span>
+                                            <span class="content">75%</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Lead developer, project Leader and embedded Linux architect.</span>
+                                            <span class="content">Designing a socket server to access operation disc drive though wifi interface.</span>
+                                            </h5>                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="exp-box">
+                                    <div class="item-num">3</div>
+                                    <h5 class="company">Gun Fu Technology</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Automotive R&D Team Manager</span>
+                                        <span class="exp-start">Mar 2015</span>
+                                        <span class="exp-end">Aug 2015</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <div class="job-descript">Product of touch locker for automotive</div>
+                                        <h6 class="job-exp-time">
+                                            <span class="job-start">2015.3</span>
+                                            <span class="job-end">2015.8</span>
+                                        </h6>
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="content">Problem-solving through teamwork, direct coding responsibilities, and lead developer.</span>
+                                            <span class="content">Leading the team to move quickly and deliver results for customer.</span>
+                                            </h5>                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="exp-box">
+                                    <div class="item-num">4</div>
+                                    <h5 class="company">Ligitek</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Automotive Firmware Engineer</span>
+                                        <span class="exp-start">Mar 2013</span>
+                                        <span class="exp-end">Mar 2015</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <div class="job-descript">Automotive CAN Bus Decoder/Encoder</div>
+                                        <h6 class="job-exp-time">
+                                            <span class="job-start">2014.1</span>
+                                            <span class="job-end">2015.2</span>
+                                        </h6>
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="role">Individual weight for the FW team</span>
+                                            <span class="content">100%</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Lead developer, None-OS MCU system architect, and problem-solving with EE.</span>
+                                            <span class="content">CAN Bus project success to mass production.</span>
+                                            </h5>                                
+                                        </p>
+                                    </div>
+                                    <div class="exp-session">
+                                        <div class="job-descript">Automotive Head-up Display</div>
+                                        <h6 class="job-exp-time">
+                                            <span class="job-start">2013.5</span>
+                                            <span class="job-end">2015.2</span>
+                                        </h6>
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="role">Individual weight for the FW team</span>
+                                            <span class="content">100%</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Lead developer, None-OS MCU system architect, and problem-solving with EE.</span>
+                                            <span class="content">LED type project success to mass production.（experienced drive TFT Display control）</span>
+                                            </h5>                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="exp-box">
+                                    <div class="item-num">5</div>
+                                    <h5 class="company">Wintec</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Automotive Firmware Engineer</span>
+                                        <span class="exp-start">Oct 2012</span>
+                                        <span class="exp-end">Feb 2013</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <div class="job-descript">SMS part of Car Alarm system</div>
+                                        <h6 class="job-exp-time">
+                                            <span class="job-start">2012.10</span>
+                                            <span class="job-end">2013.2</span>
+                                        </h6>
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="role">Individual weight for SMS part</span>
+                                            <span class="content">100%</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">SMS system communication architect.</span>
+                                            <span class="content">AT command system devlopment on MCU.</span>
+                                            </h5>                                
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="edu" class="flex-block">
+                            <div class=""></div>
+                            <div class="title-wrap">
+                                <i class="fas fa-graduation-cap exp-inline"></i>
+                                <h3 class="title txt-inline">Education</h3>
+                            </div>
+                            <div class="exp-group">
+                                <div class="number-line edu"></div>
+                                <div class="exp-box">
+                                    <div class="item-num edu">1</div>
+                                    <h5 class="education">Institute for Information Industry, 資策會</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Embedded Linux Training</span>
+                                        <span class="exp-start">2015.9</span>
+                                        <span class="exp-end">2015.11</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="content">Taipei</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Major: Android Embedded Software Design</span>
+                                            <span class="content">Authorization of industrial development bureau with 302 training hours.</span>
+                                            </h5>                               
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="exp-box">
+                                    <div class="item-num edu">2</div>
+                                    <h5 class="education">National Chi Nan University, 曁南大學</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Master degree</span>
+                                        <span class="exp-start">2009</span>
+                                        <span class="exp-end">2011</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                            <span class="content">Taiwan Nantou</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Major: Wireless Communication System.</span>
+                                            <span class="content">Won the best paper in the field of wireless communication.</span>
+                                            </h5>                               
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="exp-box">
+                                    <div class="item-num edu">3</div>
+                                    <h5 class="education">Southern Taiwan University of Science and Technology, 南台科大</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Bachelor Degree</span>
+                                        <span class="exp-start">2005</span>
+                                        <span class="exp-end">2009</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                                <span class="content">Taiwan Tainan</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Major: Electronic with Network communication engineering</span>
+                                            <span class="content">International contest on micro mouse intelligence as Fourth place.</span>
+                                            </h5>                               
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="exp-box">
+                                    <div class="item-num edu">4</div>
+                                    <h5 class="education">High School</h5>
+                                    <div class="logo"></div>
+                                    <h6>
+                                        <span class="title">Vocational college</span>
+                                        <span class="exp-start">2002</span>
+                                        <span class="exp-end">2005</span>
+                                    </h6>
+                                    <div class="exp-session">
+                                        <p class="descript-text">
+                                            <h5 class="text-session">
+                                                <span class="content">Taiwan New Taipei City</span>
+                                            </h5>
+                                            <h5 class="text-session">
+                                            <span class="content">Major: Electronic science</span>
+                                            <span class="content">Electronic loop and assembly language training.</span>
+                                            </h5>                               
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer leo-block footer-flex">
+                        <h5>Copyright Ⓒ 2018 by Weng, Sheng-Hung</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="container-bar" class="container-bar">
+                <div class="dragger-container">
+                    <div id="dragger-vertical" class="dragger-vertical">
+                        <div class="dragger-bar"></div>
+                    </div>
+                </div>
+                <div class="scroll-tools"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
 </body>
 
 </html>
