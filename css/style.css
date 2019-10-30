@@ -392,6 +392,8 @@ i{
     line-height: 1.67;
     font-weight: bold;
     font-style: italic;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-width: 180px;
 }
@@ -421,6 +423,8 @@ i{
 .title-wrap {
     margin: 40px 0 30px;
     padding-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -727,4 +731,72 @@ span.job-end::before{
     color: #BCD054;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+.logo-group{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .company{
+    display: inline-block;
+} */
+
+.logo{
+    height:50px;
+    width:50px;
+}
+
+.liteon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/liteon.png);
+}
+
+.gunfu{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/gunfu.png);
+}
+
+.ligitek{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/ligitek.png);
+}
+
+.wintec{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/wintec.png);
+}
+
+.iii{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/iii.jpeg);
+}
+
+.ncnu{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/NCNU.jpeg);
+}
+
+.stust{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/NTUST.png);
 }
