@@ -21,6 +21,7 @@ function Point(obj_pointer) {
 
 function init() {
     let viewHeight = document.querySelector("#container-viewer").clientHeight;
+    let animaBackground = document.querySelector("#anima_background");
     elements = document.querySelectorAll('span[class^="hidden"]');
     windowHeight = -document.querySelector("#container-page").offsetTop;
     document.querySelector("#dragger-vertical").style.height=""+viewHeight/3+"px";
@@ -31,7 +32,15 @@ function init() {
     exp=Point(document.querySelector("#exp"));
     edu=Point(document.querySelector("#edu"));
     top_interval=parseInt(window.getComputedStyle(document.querySelector("div.content__inner"), null).getPropertyValue('padding-top'),10);
+    if(animaBackground.clientWidth<441){
+        let skillItem = document.querySelectorAll('div.skill-item');
+        for(let i=0; i<skillItem.length; i++){
+            skillItem[i].style.width="100%";
+        }
+    }
+    buttonInit();
     checkPosition();
+    touchInit();
 }
 
 function checkPosition() {
