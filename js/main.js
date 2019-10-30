@@ -31,6 +31,7 @@ function init() {
     group_exp_edu=Point(document.querySelector("#group-exp-edu"));
     exp=Point(document.querySelector("#exp"));
     edu=Point(document.querySelector("#edu"));
+    vedio=Point(document.querySelector("#vedio"));
     top_interval=parseInt(window.getComputedStyle(document.querySelector("div.content__inner"), null).getPropertyValue('padding-top'),10);
     if(animaBackground.clientWidth<441){
         let skillItem = document.querySelectorAll('div.skill-item');
@@ -76,19 +77,21 @@ function checkPosition() {
     const interval=70;
     const cust_int=200;
     if((page_location>=about.y-win_container.y-interval)&&(page_location<skill.y-win_container.y-interval-cust_int)){
-        menu=['y','n','n','n'];
+        menu=['y','n','n','n','n'];
     }else if((page_location>=skill.y-win_container.y-interval-cust_int)&&(page_location<group_exp_edu.y-win_container.y-interval-cust_int*2)){
-        menu=['n','y','n','n'];
-    }else{
+        menu=['n','y','n','n','n'];
+    }else if((page_location>=group_exp_edu.y-win_container.y-interval-cust_int*2)&&(page_location<vedio.y-win_container.y-interval-cust_int*2)){
         if((exp.y==edu.y)){
-            menu=['n','n','y','y'];
+            menu=['n','n','y','y','n'];
         }else if(exp.y<edu.y){
             if(page_location>=edu.y-win_container.y-interval-cust_int*2){
-                menu=['n','n','n','y'];
+                menu=['n','n','n','y','n'];
             }else{
-                menu=['n','n','y','n'];
+                menu=['n','n','y','n','n'];
             }
         }
+    }else{
+        menu=['n','n','n','n','y'];
     }
     for(let i=0;i<menu_icon.length;i++){
         if(menu[i]==='y'){

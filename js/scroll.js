@@ -114,7 +114,6 @@ function touchInit(){
     touchPanel.addEventListener("touchcancel", function(event) {
         event.preventDefault();
         // console.log("touch cancel.");
-
         if(barAnimatTID){
             clearTimeout(barAnimatTID);
             barAnimatTID=null;
@@ -156,7 +155,7 @@ var isEventSupported = (function(){
   var ID;
   function sampleup(e){
     let buttomSet = document.querySelectorAll('ul.session-info-menu i');
-    let childName,taget,pos;
+    let childName,taget;
 
     childName = this.childNodes[0].className;
 
@@ -187,6 +186,11 @@ var isEventSupported = (function(){
                 taget=Point(document.querySelector("#edu"));
                 gotoTaget(taget);
                 break;
+            case "fab fa-youtube":
+                document.querySelector('ul.session-info-menu i.fab.fa-youtube').classList.add("color-complement-1");
+                taget=Point(document.querySelector("#vedio"));
+                gotoTaget(taget);
+                break;
             default:
                 break;
         }
@@ -201,7 +205,7 @@ function sampledown(e){
       let buttomSet = document.querySelectorAll('ul.session-info-menu>li');
       if (isEventSupported("onpointerdown")) {
         //   console.log("device support on-pointer-down");
-          for(let i=0; i<4; i++){
+          for(let i=0; i<5; i++){
               buttomSet[i].addEventListener('pointerup',sampleup,false);
               buttomSet[i].addEventListener('pointerdown',sampledown,false);
               
