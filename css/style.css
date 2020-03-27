@@ -174,8 +174,24 @@ ul>li{
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(/img/leo_img.png);
+    background-position: top;
+    background-image: url(/img/leo_img001.png);
+}
+
+.person_avatar:after
+{
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.9;
+    width: 100%;
+    position: absolute;
+    background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
 }
 
 .person_info{
@@ -447,6 +463,10 @@ i{
     width: 50%;
     margin-bottom: 30px;
     min-width: 200px;
+}
+
+.full-type{
+    width: 100%;
 }
 
 .skill-item>h5,
@@ -750,6 +770,13 @@ span.job-end::before{
 .logo{
     height:50px;
     width:50px;
+}
+
+.foxconn{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/logo/foxconn.png);
 }
 
 .liteon{
