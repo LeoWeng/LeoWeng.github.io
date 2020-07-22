@@ -77,8 +77,8 @@ function touchInit(){
         if(event.targetTouches.length == 1){
             var touch = event.targetTouches[0];
             const spanY = touch.pageY - pressY;
+            //console.log(spanY);
             pageMoveEvent(page_Height,-spanY);
-            // console.log(spanY);
         }
     },false);
     touchPanel.addEventListener('touchstart', function(event) {
