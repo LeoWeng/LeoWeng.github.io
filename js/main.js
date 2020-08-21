@@ -22,6 +22,11 @@ function Point(obj_pointer) {
 function init() {
     let viewHeight = document.querySelector("#container-viewer").clientHeight;
     let animaBackground = document.querySelector("#anima_background");
+    let windowWidth = window.screen.availWidth;
+    let innerLeft = document.querySelector(".site-content__inner-left");
+    let innerRight = document.querySelector(".site-content__inner-right");
+    let person = document.getElementById('personInfo');
+    let skillItem = document.querySelectorAll('div.skill-item');
     elements = document.querySelectorAll('span[class^="hidden"]');
     windowHeight = -document.querySelector("#container-page").offsetTop;
     document.querySelector("#dragger-vertical").style.height=""+viewHeight/3+"px";
@@ -33,12 +38,42 @@ function init() {
     edu=Point(document.querySelector("#edu"));
     vedio=Point(document.querySelector("#vedio"));
     top_interval=parseInt(window.getComputedStyle(document.querySelector("div.content__inner"), null).getPropertyValue('padding-top'),10);
-    if(animaBackground.clientWidth<441){
-        let skillItem = document.querySelectorAll('div.skill-item');
+    if(windowWidth<1400){
+        if(windowWidth>=767){
+            if(person.hasChildNodes()){
+                var children = person.childNodes;
+                for(var c=0; c < children.length; c++) {
+                    if(children[c].style) {
+                        children[c].style.display = 'block';
+                    }
+                }
+            }
+            innerLeft.style.maxWidth = 'calc(50% - 150px)';
+            innerRight.style.maxWidth = 'calc(50% + 150px)';
+        } else {
+            if(person.hasChildNodes()){
+                var children = person.childNodes;
+                for(var c=0; c < children.length; c++) {
+                    if(children[c].style) {
+                        children[c].style.display = 'none';
+                    }
+                }
+            }
+            innerLeft.style.maxWidth = '50px';
+            innerRight.style.maxWidth = 'calc(100% - 50px)';
+        }
+    }
+    if((animaBackground.clientWidth<441)||windowWidth<441){
         for(let i=0; i<skillItem.length; i++){
             skillItem[i].style.width="100%";
         }
     }
+    else{
+        for(let i=0; i<skillItem.length; i++){
+            skillItem[i].style.width="50%";
+        }
+    }
+    
     buttonInit();
     checkPosition();
     touchInit();

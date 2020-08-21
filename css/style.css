@@ -89,15 +89,6 @@ body{
     .site-content__inner-right {
         max-width: calc(100% - 50px);
     }
-    .left-menu {
-        width: 100%;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-preferred-size: unset;
-        flex-basis: unset;
-        margin: 0;
-    }
     .person *{
         display: none;
     }
@@ -175,7 +166,7 @@ ul>li{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    background-image: url(/img/leo_img003.png);
+    background-image: url(/img/leo_img002.png);
 }
 
 .person_avatar:after
