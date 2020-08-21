@@ -39,7 +39,7 @@ function init() {
     vedio=Point(document.querySelector("#vedio"));
     top_interval=parseInt(window.getComputedStyle(document.querySelector("div.content__inner"), null).getPropertyValue('padding-top'),10);
     if(windowWidth<1400){
-        if(windowWidth>=767){
+        if(windowWidth>=500){
             if(person.hasChildNodes()){
                 var children = person.childNodes;
                 for(var c=0; c < children.length; c++) {
