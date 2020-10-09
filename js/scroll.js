@@ -68,6 +68,9 @@ function wheelEvent(event){
     checkPosition();
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 function touchInit(){
     let touchPanel = document.querySelector("#anima_background");
@@ -80,6 +83,7 @@ function touchInit(){
             //console.log(spanY);
             pageMoveEvent(page_Height,-spanY);
         }
+        sleep(200);
     },false);
     touchPanel.addEventListener('touchstart', function(event) {
         let page_location = document.getElementById('container-page');
