@@ -37,8 +37,6 @@ function pageJump(location){
     page_location.style.top = "-"+location+"px";
 }
 
-
-
 function wheelEvent(event){
     let page_location = document.getElementById('container-page');
     let viewer = document.getElementById('container-viewer');
@@ -66,6 +64,7 @@ function wheelEvent(event){
         }, 500);
 
     checkPosition();
+    sleep(200);
 }
 
 function sleep(ms) {
@@ -99,7 +98,9 @@ function touchInit(){
         if(event.targetTouches.length == 1) {
             var touch = event.targetTouches[0];
             pressY = touch.pageY;
-        }}, false);
+        }
+        sleep(200);
+    }, false);
     touchPanel.addEventListener('touchend', function(event) {
         event.preventDefault();
         // console.log("touch end.");
@@ -114,6 +115,7 @@ function touchInit(){
                 bar_animation.classList.remove("bar_open");
             }, 500);
         }
+        sleep(200);
     }, false);
     touchPanel.addEventListener("touchcancel", function(event) {
         event.preventDefault();
@@ -128,12 +130,28 @@ function touchInit(){
                 bar_animation.classList.remove("bar_open");
             }, 500);
         }
+        sleep(200);
     }, false);
 }
 
+function mobileTest() {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
 function gotoTaget(taget){
-    var win_container=Point(document.querySelector("#container-page"));
-    const location = taget.y-win_container.y-70;
+    var win_container = Point(document.querySelector("#container-page"));
+    var location = 0;
+    if(mobileTest()){
+        location = taget.y-win_container.y;
+    }
+    else{
+        location = taget.y-win_container.y-70;
+    }
     pageJump(location);
 }
 
@@ -172,7 +190,19 @@ var isEventSupported = (function(){
         switch(childName){
             case "fas fa-user":
                 document.querySelector('ul.session-info-menu i.fas.fa-user').classList.add("color-complement-1");
-                taget=Point(document.querySelector("#about"));
+                if(mobileTest()){
+                    let windowWidth = window.screen.availWidth;
+                    let phoneHeight = window.screen.availHeight;
+                    if(phoneHeight >= windowWidth){
+                        taget=Point(document.querySelector("#aboutFig"));
+                    }
+                    else{
+                        taget=Point(document.querySelector("#about"));
+                    }
+                }
+                else{
+                    taget=Point(document.querySelector("#about"));
+                }
                 gotoTaget(taget);
                 break;
             case "fas fa-tools":
