@@ -89,28 +89,16 @@ body{
     .site-content__inner-right {
         max-width: calc(100% - 50px);
     }
-    .person *{
+    #personInfo.person *{
         display: none;
+    }
+    #min-view-personInfo.person{
+        display: block;
     }
 }
 
-
-.overlay::before{
-    top: 0;
-    background-image: -webkit-linear-gradient(top, #090109 45%, #090109 23%, transparent 100%);
-    background-image: -o-linear-gradient(top, #090109 45%, #090109 23%, transparent 100%);
-    background-image: linear-gradient(to bottom, #090109 45%, #090109 23%, transparent 100%);
-}
-
-.container-view::after{
-    bottom: 0;
-    background-image: -webkit-linear-gradient(bottom, #090109 45%, #090109 23%, transparent 100%);
-    background-image: -o-linear-gradient(bottom, #090109 45%, #090109 23%, transparent 100%);
-    background-image: linear-gradient(to top, #090109 45%, #090109 23%, transparent 100%);
-}
-
-.overlay::before,
-.container-view::after{
+.top-shadow,
+.bottom-shadow{
     content: '';
     left: 0;
     right: 0;
@@ -118,6 +106,20 @@ body{
     position: absolute;
     display: block;
     z-index: 3;
+    
+}
+
+.top-shadow{
+    top: -3px;
+    background-image: -webkit-linear-gradient(top, #090109 45%, #090109 23%, transparent 100%);
+    background-image: -o-linear-gradient(top, #090109 45%, #090109 23%, transparent 100%);
+    background-image: linear-gradient(to bottom, #090109 45%, #090109 23%, transparent 100%); 
+}
+.bottom-shadow{
+    bottom: -3px;
+    background-image: -webkit-linear-gradient(bottom, #090109 45%, #090109 23%, transparent 100%);
+    background-image: -o-linear-gradient(bottom, #090109 45%, #090109 23%, transparent 100%);
+    background-image: linear-gradient(to top, #090109 45%, #090109 23%, transparent 100%);
 }
 
 .session-top-menu{
@@ -185,6 +187,34 @@ ul>li{
     background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
 }
 
+#min-view-personInfo {
+    display: none;
+}
+
+.person_avatar_min{
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url(/img/leo_img003.png);
+}
+
+.person_avatar_min:after
+{
+    content: ' ';
+    display: block;
+    height: 75vh;
+    left: -23px;
+    top: 0;
+    opacity: 0.9;
+    width: calc(100% + 24px);
+    position: absolute;
+    background: radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0)40%,rgba(0, 0, 0, 0.4)65%, rgba(0, 0, 0, 1)85%);
+}
+
 .person_info{
     position: absolute;
     bottom: 0;
@@ -198,6 +228,14 @@ ul>li{
     color: blanchedalmond;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+.person_email{
+    font-size: 18px;
+    font-weight: bold;
+    color: #D360D7;
+    text-align: center;
+    margin-top: 10px;
+    line-height: normal;
 }
 
 .person_position {
@@ -260,7 +298,6 @@ ul>li{
 .overlay{
     width: 100%;
     margin: 40px 0;
-    padding: 0 5px 0 35px;
     overflow: hidden;
     position: relative;
     height: 100%;
@@ -361,6 +398,7 @@ ul>li{
     width: auto;
     height: auto;
     top: 0px;
+    padding: 0 5px 0 35px;
 }
 
 .container-page{
@@ -409,7 +447,7 @@ i{
     margin-right: 15px;
 }
 
-.about-item:not(:last-child)::after {
+.about-item-after {
     content: '/';
     font-size: 18px;
     font-weight: bold;
@@ -461,8 +499,25 @@ i{
 }
 
 .skill-item>h5,
-.item-group-title>h5{
+.item-group-title>h5,
+.title-inline>h5
+{
     color: blanchedalmond;
+}
+
+.title-inline{
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.title-inline>h5{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .item-group{
@@ -609,7 +664,7 @@ i{
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:stretch;
     align-items:flex-start;
     flex-wrap: wrap;
 }
@@ -704,6 +759,15 @@ h5.text-session{
 
 .job-exp-time{
     display: inline-block;
+    border-bottom: 1px outset #E5FB6F;
+}
+
+h5.text-session{
+    border-bottom: 1px outset #E5FB6F;
+}
+
+.exp-session{
+    border-top: 1px outset #E5FB6F;
 }
 
 span.title{
