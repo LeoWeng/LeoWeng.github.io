@@ -152,6 +152,7 @@ ul>li{
 .left-vertical-menu i{
     display: inline-block;
     padding: 16px;
+    padding-top: 9px;
     transform: scale(1.35);
 }
 
@@ -414,8 +415,8 @@ i{
 }
 
 .session-buttom-menu i{
-    color: #89398C;
-    text-shadow: 0 0 34px #fff;
+    color: #fc99ff;
+    text-shadow: 0 0 2px #fff;
 }
 
 /* About start*/
