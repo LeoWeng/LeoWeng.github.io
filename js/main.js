@@ -410,19 +410,21 @@ function checkPosition() {
         let phoneHeight = window.screen.availHeight;
         if(phoneHeight >= windowWidth){
             if(smartPhoneV!=1){
+                console.log("case: Phone case 1");
                 interval = 0;
                 cust_int = 1500;
                 smartPhoneVertical();
                 smartPhoneV = 1;
                 conditionCase1 = 0;
                 conditionCase2 = skill.y-cust_int;
-                conditionCase3 = exp.y-1.5*cust_int;
-                conditionCase4 = edu.y-2*cust_int;
-                conditionCase5 = vedio.y-2.5*cust_int;
+                conditionCase3 = exp.y-2.2*cust_int;
+                conditionCase4 = edu.y-2.5*cust_int;
+                conditionCase5 = vedio.y-3.4*cust_int;
             }
         }
         else{
             if(smartPhoneV!=2){
+                console.log("case: Phone case 2");
                 cust_int = 200;
                 smertPhoneHorizontal();
                 smartPhoneV = 2;
@@ -430,28 +432,30 @@ function checkPosition() {
                 conditionCase2 = skill.y-1.5*cust_int-20;
                 conditionCase3 = exp.y-1.5*cust_int;
                 conditionCase4 = edu.y-2.5*cust_int;
-                conditionCase5 = vedio.y-2.5*cust_int;
+                conditionCase5 = vedio.y-1.5*cust_int;
             }
         }
     }
     else{
+        console.log("case: it's PC");
         smartPhoneV = 0;
         detecterPC();
         interval = 70;
         cust_int = 200;
         conditionCase1 = about.y-win_container.y-interval;
         conditionCase2 = skill.y-win_container.y-interval-cust_int;
-        conditionCase3 = group_exp_edu.y-win_container.y-interval-cust_int*2;
-        conditionCase4 = vedio.y-win_container.y-interval-cust_int*2;
+        conditionCase3 = exp.y-win_container.y-interval-cust_int*2;
+        conditionCase4 = edu.y-win_container.y-interval-cust_int*2;
+        conditionCase5 = vedio.y-win_container.y-interval-cust_int*2;
     }
-    /*
+    
     console.log("new:"+smartPhoneV);
     console.log("page_location:"+page_location);
     console.log("condition 1:"+conditionCase1+"-"+conditionCase2);
     console.log("condition 2:"+conditionCase2+"-"+conditionCase3);
     console.log("condition 3:"+conditionCase3+"-"+conditionCase4);
     console.log("condition 4:"+conditionCase4+"-"+conditionCase5);
-    */
+    
     if((page_location>=conditionCase1)&&(page_location<conditionCase2)){
         menu=['y','n','n','n','n'];
     }else if((page_location>=conditionCase2)&&(page_location<conditionCase3)){
